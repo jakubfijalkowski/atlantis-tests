@@ -13,3 +13,11 @@ terraform {
     in_cluster_config = true
   }
 }
+
+resource "random_string" "random" {
+  length = 10
+}
+
+output "str" {
+  value = random_string.random.result
+}
