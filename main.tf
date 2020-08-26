@@ -15,7 +15,7 @@ terraform {
 }
 
 resource "random_string" "random" {
-  length = 12
+  length = 13
 }
 
 output "str" {
